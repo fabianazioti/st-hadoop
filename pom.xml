@@ -49,6 +49,7 @@
 	    <descriptor>src/main/assembly/assembly.xml</descriptor>
             <descriptor>src/main/assembly/uber-jar.xml</descriptor>
           </descriptors>
+	  <encoding>UTF-8</encoding>
           <archive>
             <manifest>
               <mainClass>edu.umn.cs.spatialHadoop.operations.Main</mainClass>
@@ -76,6 +77,7 @@
        <configuration>
          <source>1.6</source>
          <target>1.6</target>
+	 <encoding>UTF-8</encoding>	
        </configuration>
      </plugin>
     
@@ -138,7 +140,8 @@
       <artifactId>maven-jar-plugin</artifactId>
       <version>2.6</version>
       <configuration>
-        <archive>
+        <encoding>UTF-8</encoding>
+	<archive>
           <manifest>
             <mainClass>edu.umn.cs.spatialHadoop.operations.Main</mainClass>
           </manifest>
@@ -226,4 +229,7 @@
   </distributionManagement>
 	
   <artifactId>sthadoop</artifactId>
+
+  <properties> <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding> </properties>
 </project>
+
