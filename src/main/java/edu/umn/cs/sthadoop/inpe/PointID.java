@@ -16,8 +16,8 @@ public class PointID extends STPoint {
 	private static final Log LOG = LogFactory.getLog(PointID.class);
 	public String id;
 	public String datetime;
-	public String longitude;
 	public String latitude;
+	public String longitude;
 
 
 	public PointID() {
@@ -28,9 +28,9 @@ public class PointID extends STPoint {
 		String[] list = text.toString().split(",");
 		id = list[0];
 		datetime = list[1];
-		longitude = list[2];
-		latitude = list[3];
-		super.fromText(new Text(datetime + "," + longitude + "," + latitude));
+		latitude = list[2];
+		longitude = list[3];
+		super.fromText(new Text(datetime + "," + latitude + "," + longitude));
 
 	}
 
@@ -61,9 +61,9 @@ public class PointID extends STPoint {
 		String[] list = text.toString().split(",");
 		id = list[0];
 		datetime = list[1];
-		longitude = list[2];
-		latitude = list[3];
-		super.fromText(new Text(datetime + "," +longitude + "," + latitude));
+		latitude = list[2];
+		longitude = list[3];
+		super.fromText(new Text(datetime + "," + latitude + "," + longitude));
 
 	}
 
@@ -73,8 +73,8 @@ public class PointID extends STPoint {
 		c.id = this.id;
 		c.time = this.datetime;
 		c.time = this.time;
-		c.longitude = this.longitude;
 		c.latitude = this.latitude;
+		c.longitude = this.longitude;
 		c.x = this.x;
 		c.y = this.y;
 		return c;
